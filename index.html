@@ -1,18 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset= "UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Westmoreland Biology</title>
     <link rel="stylesheet" href="style.css">
-    <title>MAIN PAGE</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to the Biology Website</h1>
-        <h2>Check out my Youtube channel for Biology Videos</h2>
-        <h2>Don't forget to like and subscribe to the Youtube Channel!</h2>
-        <a href="./about.html"><h2>Click here to learn about Biology</h2></a>
-    </div>
+
+<div class="layout">
+
+    <!-- MOBILE TOGGLE -->
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+
+        <div class="brand">
+            <img src="images/banner 1.png" alt="Westmoreland Biology" class="brand-logo">
+        </div>
+
+        <a href="index.html" class="nav-link active">
+            <img src="images/Westmoreland Biology.JPG" class="nav-icon">
+            <span>Home</span>
+        </a>
+
+        <a href="AP1.html" class="nav-link">
+            <img src="images/2 bros.png" class="nav-icon">
+            <span>AP 1</span>
+        </a>
+
+        <a href="https://www.youtube.com/@ezekielpatterson2394" target="_blank" class="nav-link">
+            <span>▶ YouTube</span>
+        </a>
+
+       
+    </nav>
+
+    <!-- CONTENT -->
+    <main class="content">
+
+        <section class="card hero">
+            <img src="images/banner 1.png" class="hero-logo" alt="Westmoreland Biology Banner">
+            <p class="hero-text">
+                Information and links for Biology Labs
+            </p>
+        </section>
+
+        <section class="card">
+            <h1>Welcome to Westmoreland Biology</h1>
+            <p>
+                We are here to help!
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Videos</h2>
+            <div class="buttons">
+                <a class="btn youtube" href="https://www.youtube.com/@ezekielpatterson2394" target="_blank">YouTube</a>
+            </div>
+        </section>
+
+    </main>
+
+</div>
+
 </body>
 </html>
+
+
