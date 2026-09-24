@@ -1,233 +1,488 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AP 1 // Westmoreland Biology</title>
-    <link rel="stylesheet" href="style.css">
+
+```
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+    AP 1 // Anatomy & Physiology
+</title>
+
+<link
+    rel="stylesheet"
+    href="style.css"
+>
+```
+
 </head>
 
 <body>
 
-<div class="layout">
+<div class="lcars-interface">
 
-    <!-- MOBILE TOGGLE -->
-    <input type="checkbox" id="menu-toggle">
+```
+<!-- =====================================================
+     MOBILE MENU
+     ===================================================== -->
 
-    <label for="menu-toggle" class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
+<input
+    type="checkbox"
+    id="menu-toggle"
+>
 
 
-    <!-- LCARS SIDEBAR -->
-    <nav class="sidebar">
+<label
+    for="menu-toggle"
+    class="menu-icon"
+>
 
-        <div class="brand">
-            <img src="images/banner 1.png"
-                 alt="Westmoreland Biology"
-                 class="brand-logo">
+    <span></span>
+    <span></span>
+    <span></span>
+
+</label>
+
+
+
+<!-- =====================================================
+     SIDEBAR
+     ===================================================== -->
+
+<aside class="lcars-sidebar">
+
+
+    <div class="sidebar-top">
+
+        <div class="lcars-elbow"></div>
+
+        <div class="system-number">
+            02
         </div>
 
-        <div class="lcars-label">
-            WESTMORELAND
-            <span>BIOLOGY</span>
+    </div>
+
+
+    <div class="brand">
+
+        <img
+            src="images/banner 1.png"
+            alt="Westmoreland Biology"
+            class="brand-logo"
+        >
+
+    </div>
+
+
+    <div class="nav-label">
+        PRIMARY SYSTEMS
+    </div>
+
+
+    <a
+        href="index.html"
+        class="lcars-nav"
+    >
+
+        <span class="nav-color orange"></span>
+
+        <span class="nav-text">
+            HOME
+        </span>
+
+        <span class="nav-code">
+            01
+        </span>
+
+    </a>
+
+
+    <a
+        href="AP1.html"
+        class="lcars-nav active"
+    >
+
+        <span class="nav-color purple"></span>
+
+        <span class="nav-text">
+            AP 1
+        </span>
+
+        <span class="nav-code">
+            02
+        </span>
+
+    </a>
+
+
+    <div class="nav-label external-label">
+        EXTERNAL SYSTEMS
+    </div>
+
+
+    <a
+        href="https://www.youtube.com/@ezekielpatterson2394"
+        target="_blank"
+        class="lcars-nav external"
+    >
+
+        <span class="nav-color blue"></span>
+
+        <span class="nav-text">
+            YOUTUBE
+        </span>
+
+        <span class="nav-code">
+            EXT
+        </span>
+
+    </a>
+
+
+    <div class="side-data">
+
+        <div>
+            COURSE SYSTEM
         </div>
 
-        <div class="nav-section">
+        <div>
+            AP 1
+        </div>
 
-            <div class="section-title">
-                PRIMARY SYSTEMS
-            </div>
+        <div class="online">
+            ● ONLINE
+        </div>
 
-            <a href="index.html" class="nav-link">
-
-                <div class="nav-bar"></div>
-
-                <span>HOME</span>
-
-            </a>
+    </div>
 
 
-            <a href="AP1.html" class="nav-link active">
+    <div class="sidebar-bottom">
 
-                <div class="nav-bar"></div>
+        <span>COURSE</span>
 
-                <span>AP 1</span>
+        <span>AP-01</span>
 
-            </a>
+    </div>
+
+</aside>
+
+
+
+<!-- =====================================================
+     MAIN
+     ===================================================== -->
+
+<main class="main-display">
+
+
+    <!-- HEADER -->
+
+    <header class="top-interface">
+
+
+        <div class="top-elbow">
+
+            <div class="top-orange"></div>
+
+            <div class="top-purple"></div>
 
         </div>
 
 
-        <div class="nav-section">
+        <div class="header-information">
 
-            <div class="section-title">
-                EXTERNAL LINKS
-            </div>
-
-            <a href="https://www.youtube.com/@ezekielpatterson2394"
-               target="_blank"
-               class="nav-link external">
-
-                <div class="nav-bar"></div>
-
-                <span>▶ YOUTUBE</span>
-
-            </a>
-
-        </div>
-
-
-        <div class="sidebar-footer">
-
-            <div>COURSE SYSTEM</div>
-
-            <div>AP 1 ONLINE</div>
-
-        </div>
-
-    </nav>
-
-
-    <!-- MAIN CONTENT -->
-    <main class="content">
-
-
-        <!-- HEADER -->
-        <header class="lcars-header">
-
-            <div class="header-left">
-
-                <span class="header-code">
-                    COURSE-01
-                </span>
-
-                <span class="header-title">
-                    ANATOMY &amp; PHYSIOLOGY 1
-                </span>
-
-            </div>
-
-            <div class="header-right">
-                AP 1
-            </div>
-
-        </header>
-
-
-        <!-- COURSE TITLE -->
-        <section class="card">
-
-            <div class="card-header">
-
-                <div class="card-tab orange"></div>
-
-                <span>
-                    COURSE INFORMATION
-                </span>
-
-            </div>
-
-
-            <h1>
-                About AP 1
-            </h1>
-
-        </section>
-
-
-        <!-- IMAGE AREA -->
-        <section class="split-container">
-
-            <div class="image-panel">
-
-                <div class="image-panel-label">
-                    SYSTEM IMAGE 01
-                </div>
-
-                <img src="images/"
-                     class="split-image"
-                     alt="Course image">
-
-            </div>
-
-
-            <div class="image-panel">
-
-                <div class="image-panel-label">
-                    SYSTEM IMAGE 02
-                </div>
-
-                <img src="images/"
-                     class="split-image"
-                     alt="Course image">
-
-            </div>
-
-        </section>
-
-
-        <!-- COURSE DESCRIPTION -->
-        <section class="card">
-
-            <div class="card-header">
-
-                <div class="card-tab purple"></div>
-
-                <span>
-                    COURSE OVERVIEW
-                </span>
-
-            </div>
-
-            <p>
-                AP 1 is a 15 week course.
-            </p>
-
-        </section>
-
-
-        <!-- WEEKLY LINKS -->
-        <section class="card">
-
-            <div class="card-header">
-
-                <div class="card-tab blue"></div>
-
-                <span>
-                    COURSE RESOURCES
-                </span>
-
-            </div>
-
-            <h2>
-                Weekly Resources
-            </h2>
-
-            <p>
-                Links to weekly Google Docs?
-            </p>
-
-        </section>
-
-
-        <!-- FOOTER -->
-        <footer class="lcars-footer">
-
-            <div class="footer-bar"></div>
-
-            <span>
-                AP 1 // ANATOMY &amp; PHYSIOLOGY
+            <span class="system-id">
+                COURSE / AP-01
             </span>
 
-            <div class="footer-bar small"></div>
+            <span class="system-name">
+                ANATOMY &amp; PHYSIOLOGY 1
+            </span>
 
-        </footer>
+        </div>
 
 
-    </main>
+        <div class="header-status">
+
+            <span>
+                COURSE STATUS
+            </span>
+
+            <strong>
+                ACTIVE
+            </strong>
+
+        </div>
+
+
+    </header>
+
+
+
+    <!-- =================================================
+         COURSE TITLE
+         ================================================= -->
+
+    <section class="main-panel course-title-panel">
+
+
+        <div class="panel-heading">
+
+            <div class="heading-color purple"></div>
+
+            <span>
+                COURSE DATABASE
+            </span>
+
+            <span class="heading-number">
+                AP-01
+            </span>
+
+        </div>
+
+
+        <div class="course-title">
+
+            <div>
+
+                <span class="course-label">
+                    WESTMORELAND BIOLOGY
+                </span>
+
+                <h1>
+                    ANATOMY &amp;
+                    PHYSIOLOGY 1
+                </h1>
+
+                <p>
+                    INTRODUCTORY HUMAN ANATOMY
+                    AND PHYSIOLOGY COURSE
+                </p>
+
+            </div>
+
+
+            <div class="course-badge">
+
+                <span>
+                    COURSE
+                </span>
+
+                <strong>
+                    AP 1
+                </strong>
+
+                <small>
+                    15 WEEKS
+                </small>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+         IMAGE / SCIENCE DISPLAY
+         ================================================= -->
+
+    <section class="science-display">
+
+
+        <div class="science-window">
+
+            <div class="window-header">
+                BIOLOGICAL REFERENCE / 01
+            </div>
+
+            <div class="science-image">
+
+                <img
+                    src="images/"
+                    alt="Anatomy and Physiology reference"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="science-window">
+
+            <div class="window-header">
+                BIOLOGICAL REFERENCE / 02
+            </div>
+
+            <div class="science-image">
+
+                <img
+                    src="images/"
+                    alt="Anatomy and Physiology reference"
+                >
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+         COURSE INFORMATION
+         ================================================= -->
+
+    <section class="main-panel">
+
+
+        <div class="panel-heading">
+
+            <div class="heading-color orange"></div>
+
+            <span>
+                COURSE OVERVIEW
+            </span>
+
+            <span class="heading-number">
+                004
+            </span>
+
+        </div>
+
+
+        <div class="course-information">
+
+
+            <div>
+
+                <span class="info-label">
+                    DURATION
+                </span>
+
+                <strong>
+                    15 WEEKS
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span class="info-label">
+                    SUBJECT
+                </span>
+
+                <strong>
+                    ANATOMY
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span class="info-label">
+                    SUBJECT
+                </span>
+
+                <strong>
+                    PHYSIOLOGY
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+         COURSE RESOURCES
+         ================================================= -->
+
+    <section class="main-panel">
+
+
+        <div class="panel-heading">
+
+            <div class="heading-color blue"></div>
+
+            <span>
+                COURSE RESOURCES
+            </span>
+
+            <span class="heading-number">
+                005
+            </span>
+
+        </div>
+
+
+        <div class="resource-module large">
+
+
+            <div class="module-color blue"></div>
+
+
+            <div class="module-content">
+
+                <span class="module-code">
+                    WEEKLY DATABASE
+                </span>
+
+                <strong>
+                    WEEKLY GOOGLE DOCUMENTS
+                </strong>
+
+                <small>
+                    COURSE RESOURCE ACCESS
+                </small>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="lcars-footer">
+
+        <span>
+            WESTMORELAND BIOLOGY
+        </span>
+
+        <span>
+            AP-01
+        </span>
+
+        <span>
+            ANATOMY &amp; PHYSIOLOGY
+        </span>
+
+    </footer>
+
+
+</main>
+```
 
 </div>
 
