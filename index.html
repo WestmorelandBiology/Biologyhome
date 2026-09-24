@@ -1,165 +1,576 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Westmoreland Biology // LCARS</title>
-    <link rel="stylesheet" href="style.css">
+
+```
+<title>Westmoreland Biology // LCARS</title>
+
+<link rel="stylesheet" href="style.css">
+```
+
 </head>
 
 <body>
 
-<div class="layout">
+<div class="lcars-interface">
 
-    <!-- MOBILE TOGGLE -->
-    <input type="checkbox" id="menu-toggle">
+```
+<!-- =====================================================
+     MOBILE MENU
+     ===================================================== -->
 
-    <label for="menu-toggle" class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
+<input type="checkbox" id="menu-toggle">
 
-    <!-- LCARS SIDEBAR -->
-    <nav class="sidebar">
+<label for="menu-toggle" class="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
 
-        <div class="brand">
-            <img src="images/banner 1.png"
-                 alt="Westmoreland Biology"
-                 class="brand-logo">
+
+<!-- =====================================================
+     LEFT LCARS STRUCTURE
+     ===================================================== -->
+
+<aside class="lcars-sidebar">
+
+    <div class="sidebar-top">
+
+        <div class="lcars-elbow"></div>
+
+        <div class="system-number">
+            01
         </div>
 
-        <div class="lcars-label">
-            WESTMORELAND
-            <span>BIOLOGY</span>
+    </div>
+
+
+    <!-- BRAND -->
+
+    <div class="brand">
+
+        <img
+            src="images/banner 1.png"
+            alt="Westmoreland Biology"
+            class="brand-logo"
+        >
+
+    </div>
+
+
+    <!-- PRIMARY NAVIGATION -->
+
+    <div class="nav-label">
+        PRIMARY SYSTEMS
+    </div>
+
+
+    <a href="index.html"
+       class="lcars-nav active">
+
+        <span class="nav-color orange"></span>
+
+        <span class="nav-text">
+            HOME
+        </span>
+
+        <span class="nav-code">
+            01
+        </span>
+
+    </a>
+
+
+    <a href="AP1.html"
+       class="lcars-nav">
+
+        <span class="nav-color purple"></span>
+
+        <span class="nav-text">
+            AP 1
+        </span>
+
+        <span class="nav-code">
+            02
+        </span>
+
+    </a>
+
+
+    <!-- EXTERNAL -->
+
+    <div class="nav-label external-label">
+        EXTERNAL SYSTEMS
+    </div>
+
+
+    <a
+        href="https://www.youtube.com/@ezekielpatterson2394"
+        target="_blank"
+        class="lcars-nav external"
+    >
+
+        <span class="nav-color blue"></span>
+
+        <span class="nav-text">
+            YOUTUBE
+        </span>
+
+        <span class="nav-code">
+            EXT
+        </span>
+
+    </a>
+
+
+    <!-- SIDE DATA -->
+
+    <div class="side-data">
+
+        <div>
+            BIOLOGY
         </div>
 
-        <div class="nav-section">
-            <div class="section-title">PRIMARY SYSTEMS</div>
-
-            <a href="index.html" class="nav-link active">
-                <div class="nav-bar"></div>
-                <span>HOME</span>
-            </a>
-
-            <a href="AP1.html" class="nav-link">
-                <div class="nav-bar"></div>
-                <span>AP 1</span>
-            </a>
+        <div>
+            LAB SYSTEM
         </div>
 
-        <div class="nav-section">
-            <div class="section-title">EXTERNAL LINKS</div>
-
-            <a href="https://www.youtube.com/@ezekielpatterson2394"
-               target="_blank"
-               class="nav-link external">
-                <div class="nav-bar"></div>
-                <span>▶ YOUTUBE</span>
-            </a>
+        <div class="online">
+            ● ONLINE
         </div>
 
-        <div class="sidebar-footer">
-            <div>LABORATORY SYSTEM</div>
-            <div>ONLINE</div>
+    </div>
+
+
+    <div class="sidebar-bottom">
+
+        <span>WESTMORELAND</span>
+
+        <span>BIOLOGY</span>
+
+    </div>
+
+</aside>
+
+
+
+<!-- =====================================================
+     MAIN DISPLAY
+     ===================================================== -->
+
+<main class="main-display">
+
+
+    <!-- TOP LCARS HEADER -->
+
+    <header class="top-interface">
+
+        <div class="top-elbow">
+
+            <div class="top-orange"></div>
+
+            <div class="top-purple"></div>
+
         </div>
 
-    </nav>
 
+        <div class="header-information">
 
-    <!-- MAIN CONTENT -->
-    <main class="content">
-
-        <!-- TOP LCARS HEADER -->
-        <header class="lcars-header">
-
-            <div class="header-left">
-                <span class="header-code">BIO-LAB</span>
-                <span class="header-title">WESTMORELAND BIOLOGY</span>
-            </div>
-
-            <div class="header-right">
-                <span>ONLINE</span>
-            </div>
-
-        </header>
-
-
-        <!-- HERO -->
-        <section class="card hero">
-
-            <div class="card-header">
-                <div class="card-tab orange"></div>
-                <span>WELCOME</span>
-            </div>
-
-            <img src="images/banner 1.png"
-                 class="hero-logo"
-                 alt="Westmoreland Biology Banner">
-
-            <div class="hero-divider"></div>
-
-            <p class="hero-text">
-                INFORMATION AND LINKS FOR BIOLOGY LABORATORIES
-            </p>
-
-        </section>
-
-
-        <!-- WELCOME -->
-        <section class="card">
-
-            <div class="card-header">
-                <div class="card-tab purple"></div>
-                <span>SYSTEM INFORMATION</span>
-            </div>
-
-            <h1>Welcome to Westmoreland Biology</h1>
-
-            <p>
-                We are here to help!
-            </p>
-
-        </section>
-
-
-        <!-- VIDEOS -->
-        <section class="card">
-
-            <div class="card-header">
-                <div class="card-tab blue"></div>
-                <span>MEDIA SYSTEMS</span>
-            </div>
-
-            <h2>Videos</h2>
-
-            <div class="buttons">
-
-                <a class="btn youtube"
-                   href="https://www.youtube.com/@ezekielpatterson2394"
-                   target="_blank">
-                    ▶ YOUTUBE
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- FOOTER -->
-        <footer class="lcars-footer">
-
-            <div class="footer-bar"></div>
-
-            <span>
-                WESTMORELAND BIOLOGY // LABORATORY INFORMATION SYSTEM
+            <span class="system-id">
+                BIO-LAB / 001
             </span>
 
-            <div class="footer-bar small"></div>
+            <span class="system-name">
+                WESTMORELAND BIOLOGY
+            </span>
 
-        </footer>
+        </div>
 
-    </main>
+
+        <div class="header-status">
+
+            <span>
+                SYSTEM STATUS
+            </span>
+
+            <strong>
+                ONLINE
+            </strong>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================================
+         HERO / MAIN DISPLAY
+         ================================================= -->
+
+    <section class="main-panel hero-panel">
+
+        <div class="panel-heading">
+
+            <div class="heading-color orange"></div>
+
+            <span>
+                BIOLOGICAL INFORMATION SYSTEM
+            </span>
+
+            <span class="heading-number">
+                001
+            </span>
+
+        </div>
+
+
+        <div class="hero-content">
+
+            <img
+                src="images/banner 1.png"
+                class="hero-logo"
+                alt="Westmoreland Biology"
+            >
+
+
+            <div class="hero-description">
+
+                <div class="large-title">
+                    WESTMORELAND
+                </div>
+
+                <div class="large-title purple-text">
+                    BIOLOGY
+                </div>
+
+                <div class="hero-line"></div>
+
+                <p>
+                    INFORMATION AND LINKS
+                    FOR BIOLOGY LABORATORIES
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- DATA STRIP -->
+
+        <div class="data-strip">
+
+            <span>
+                BIO
+            </span>
+
+            <span>
+                LAB
+            </span>
+
+            <span>
+                ANALYSIS
+            </span>
+
+            <span>
+                RESEARCH
+            </span>
+
+            <span>
+                EDUCATION
+            </span>
+
+            <span>
+                ONLINE
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         BIOLOGY SYSTEM PANEL
+         ================================================= -->
+
+    <section class="main-panel biology-panel">
+
+        <div class="panel-heading">
+
+            <div class="heading-color purple"></div>
+
+            <span>
+                SYSTEM INFORMATION
+            </span>
+
+            <span class="heading-number">
+                002
+            </span>
+
+        </div>
+
+
+        <div class="information-grid">
+
+
+            <!-- TEXT -->
+
+            <div class="information-text">
+
+                <h1>
+                    Welcome to
+                    Westmoreland Biology
+                </h1>
+
+                <p>
+                    We are here to help!
+                </p>
+
+            </div>
+
+
+            <!-- STATUS DISPLAY -->
+
+            <div class="status-display">
+
+                <div class="status-title">
+                    BIOLOGICAL SYSTEMS
+                </div>
+
+
+                <div class="status-row">
+
+                    <span>
+                        CELLULAR
+                    </span>
+
+                    <div class="status-bar">
+                        <div class="status-fill full"></div>
+                    </div>
+
+                    <span>
+                        100%
+                    </span>
+
+                </div>
+
+
+                <div class="status-row">
+
+                    <span>
+                        ANATOMY
+                    </span>
+
+                    <div class="status-bar">
+                        <div class="status-fill high"></div>
+                    </div>
+
+                    <span>
+                        92%
+                    </span>
+
+                </div>
+
+
+                <div class="status-row">
+
+                    <span>
+                        LAB
+                    </span>
+
+                    <div class="status-bar">
+                        <div class="status-fill full"></div>
+                    </div>
+
+                    <span>
+                        100%
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         RESOURCE SYSTEMS
+         ================================================= -->
+
+    <section class="main-panel resources-panel">
+
+        <div class="panel-heading">
+
+            <div class="heading-color blue"></div>
+
+            <span>
+                EDUCATIONAL RESOURCES
+            </span>
+
+            <span class="heading-number">
+                003
+            </span>
+
+        </div>
+
+
+        <div class="resource-grid">
+
+
+            <!-- AP1 -->
+
+            <a
+                href="AP1.html"
+                class="resource-module"
+            >
+
+                <div class="module-color purple"></div>
+
+                <div class="module-content">
+
+                    <span class="module-code">
+                        COURSE / 01
+                    </span>
+
+                    <strong>
+                        ANATOMY &amp;
+                        PHYSIOLOGY 1
+                    </strong>
+
+                    <small>
+                        ACCESS COURSE SYSTEM
+                    </small>
+
+                </div>
+
+            </a>
+
+
+            <!-- YOUTUBE -->
+
+            <a
+                href="https://www.youtube.com/@ezekielpatterson2394"
+                target="_blank"
+                class="resource-module"
+            >
+
+                <div class="module-color red"></div>
+
+                <div class="module-content">
+
+                    <span class="module-code">
+                        MEDIA / EXT
+                    </span>
+
+                    <strong>
+                        VIDEO LIBRARY
+                    </strong>
+
+                    <small>
+                        ACCESS YOUTUBE
+                    </small>
+
+                </div>
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         BOTTOM INFORMATION DISPLAY
+         ================================================= -->
+
+    <section class="lower-display">
+
+
+        <div class="lower-module">
+
+            <span class="lower-label">
+                SYSTEM
+            </span>
+
+            <strong>
+                BIO-LAB
+            </strong>
+
+        </div>
+
+
+        <div class="lower-module">
+
+            <span class="lower-label">
+                STATUS
+            </span>
+
+            <strong class="green-text">
+                NOMINAL
+            </strong>
+
+        </div>
+
+
+        <div class="lower-module">
+
+            <span class="lower-label">
+                ACCESS
+            </span>
+
+            <strong>
+                PUBLIC
+            </strong>
+
+        </div>
+
+
+        <div class="lower-module">
+
+            <span class="lower-label">
+                DATABASE
+            </span>
+
+            <strong>
+                ACTIVE
+            </strong>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="lcars-footer">
+
+        <span>
+            WESTMORELAND BIOLOGY
+        </span>
+
+        <span>
+            BIOLOGICAL INFORMATION SYSTEM
+        </span>
+
+        <span>
+            TERMINAL 01
+        </span>
+
+    </footer>
+
+
+</main>
+```
 
 </div>
 
