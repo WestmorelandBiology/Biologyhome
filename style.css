@@ -994,7 +994,6 @@ p {
 
 @media (max-width: 900px) {
 
-
     /* HAMBURGER */
 
     .menu-icon {
@@ -1024,13 +1023,9 @@ p {
         background: var(--lcars-orange);
 
         border-radius:
-
             0
-
             8px
-
             8px
-
             0;
 
     }
@@ -1055,11 +1050,24 @@ p {
 
         width: 270px;
 
+        height: 100dvh;
+
+        max-height: 100dvh;
+
+        box-sizing: border-box;
+
+        overflow-y: auto;
+
+        overflow-x: hidden;
+
+        -webkit-overflow-scrolling: touch;
+
         transform: translateX(-100%);
 
         transition:
-
             transform 0.3s ease;
+
+        z-index: 1500;
 
     }
 
@@ -1073,6 +1081,15 @@ p {
     }
 
 
+    /* SIDEBAR NAVIGATION */
+
+    .nav {
+
+        padding-bottom: 40px;
+
+    }
+
+
     /* CONTENT */
 
     .content {
@@ -1082,11 +1099,8 @@ p {
         width: 100%;
 
         padding:
-
             80px
-
             20px
-
             40px;
 
     }
@@ -1119,13 +1133,9 @@ p {
     .header-code {
 
         border-radius:
-
             0
-
             18px
-
             18px
-
             0;
 
     }
@@ -1136,13 +1146,9 @@ p {
         align-self: flex-end;
 
         border-radius:
-
             0
-
             18px
-
             18px
-
             0;
 
     }
@@ -1190,7 +1196,6 @@ p {
 
 @media (max-width: 500px) {
 
-
     .content {
 
         padding-left: 12px;
@@ -1235,6 +1240,5 @@ p {
         width: 100%;
 
     }
-
 
 }
