@@ -808,6 +808,13 @@ p {
 
 }
 
+.bones {
+   background: var(--lcars-red);
+
+    color: #fff;
+}
+
+
 
 /* =========================================================
    SPLIT IMAGE AREA
