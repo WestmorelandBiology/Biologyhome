@@ -1242,3 +1242,26 @@ p {
     }
 
 }
+
+/* =========================================================
+   MOBILE SIDEBAR FOOTER
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .sidebar-footer {
+
+        position: static;
+
+        margin:
+            20px
+            18px
+            0;
+
+        padding-top: 15px;
+
+        padding-bottom: 30px;
+
+    }
+
+}
