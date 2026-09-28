@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Westmoreland Biology</title>
+    <title>Westmoreland Biology // LCARS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,7 +24,7 @@
     <nav class="sidebar">
 
         <div class="brand">
-            <img src="images/W_Logo.webp"
+            <img src="images/banner 1.png"
                  alt="Westmoreland Biology"
                  class="brand-logo">
         </div>
@@ -52,24 +52,19 @@
                 <span>AP 2</span>
             </a>
 
-             <a href="BIO1.html" class="nav-link">
+             <a href="Bio1.html" class="nav-link">
                 <div class="nav-bar"></div>
                 <span>Bio 1</span>
             </a>
 
-            <a href="BIO2.html" class="nav-link">
+            <a href="Bio2.html" class="nav-link">
                 <div class="nav-bar"></div>
                 <span>Bio 2</span>
             </a>
 
-            <a href="MICRO.html" class="nav-link">
+            <a href="Micro.html" class="nav-link">
                 <div class="nav-bar"></div>
                 <span>Micro</span>
-            </a>
-
-            <a href="CALENDAR.html" class="nav-link">
-                <div class="nav-bar"></div>
-                <span>Calendar</span>
             </a>
 
         </div>
@@ -108,6 +103,18 @@
                 <span>ONLINE</span>
             </div>
 
+            <div class="header-right">
+
+            <div class="system-time">
+                <span class="time-label">LOCAL TIME</span>
+                <span id="clock">--:--:--</span>
+            </div>
+
+            <div class="system-date">
+                <span id="date">--- --, ----</span>
+            </div>
+        </div>
+
         </header>
 
 
@@ -119,7 +126,7 @@
                 <span>WELCOME</span>
             </div>
 
-            <img src="images/Color_Logo.webp"
+            <img src="images/banner 1.png"
                  class="hero-logo"
                  alt="Westmoreland Biology Banner">
 
@@ -166,12 +173,6 @@
                    target="_blank">
                     ▶ YOUTUBE
                 </a>
-                
-                <a class="btn bones"
-                   href="https://youtube.com/playlist?list=PLnj-uq8-UHr7zFOLeGV0VkGgXix7bOmKV&si=Tuy1tqgHc3lYkI3L"
-                   target="_blank">
-                    ▶ BONE PLAYLIST
-                </a>
 
             </div>
 
@@ -195,5 +196,62 @@
 
 </div>
 
+        <script>
+
+        /* =========================================================
+        LCARS SYSTEM CLOCK
+        ========================================================= */
+
+        function updateClock() {
+
+            const now = new Date();
+
+
+            /* TIME */
+
+            const time = now.toLocaleTimeString("en-US", {
+
+                hour: "numeric",
+
+                minute: "2-digit",
+
+                second: "2-digit"
+
+            });
+
+
+            /* DATE */
+
+            const date = now.toLocaleDateString("en-US", {
+
+                month: "long",
+
+                day: "numeric",
+
+                year: "numeric"
+
+            });
+
+
+            /* UPDATE DISPLAY */
+
+            document.getElementById("clock").textContent = time;
+
+            document.getElementById("date").textContent =
+                date.toUpperCase();
+
+        }
+
+
+        /* INITIAL UPDATE */
+
+        updateClock();
+
+
+        /* UPDATE EVERY SECOND */
+
+        setInterval(updateClock, 1000);
+
+        </script>
 </body>
 </html>

@@ -495,6 +495,60 @@ body {
 
 }
 
+/* =========================================================
+   SYSTEM CLOCK
+   ========================================================= */
+
+.system-time {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    line-height: 1;
+
+}
+
+
+.time-label {
+
+    font-size: 0.55rem;
+
+    letter-spacing: 0.18em;
+
+    color: var(--lcars-muted);
+
+    margin-bottom: 6px;
+
+}
+
+
+#clock {
+
+    font-size: 1.25rem;
+
+    font-weight: bold;
+
+    letter-spacing: 0.08em;
+
+    color: #050505;
+
+}
+
+
+.system-date {
+
+    margin-top: 7px;
+
+    font-size: 0.65rem;
+
+    letter-spacing: 0.15em;
+
+    color: #050505;
+
+}
 
 /* =========================================================
    CARDS
@@ -808,27 +862,6 @@ p {
 
 }
 
-.bones {
-   background: var(--lcars-red);
-
-    color: #fff;
-}
-
-/* =========================================================
-   CALENDAR
-   ========================================================= */
-.calendar-container {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 0 18px 18px 0;
-}
-
-.calendar-container iframe {
-    display: block;
-    width: 100%;
-    min-height: 700px;
-    border: 0;
-}
 
 /* =========================================================
    SPLIT IMAGE AREA
@@ -994,6 +1027,7 @@ p {
 
 @media (max-width: 900px) {
 
+
     /* HAMBURGER */
 
     .menu-icon {
@@ -1023,9 +1057,13 @@ p {
         background: var(--lcars-orange);
 
         border-radius:
+
             0
+
             8px
+
             8px
+
             0;
 
     }
@@ -1050,24 +1088,11 @@ p {
 
         width: 270px;
 
-        height: 100dvh;
-
-        max-height: 100dvh;
-
-        box-sizing: border-box;
-
-        overflow-y: auto;
-
-        overflow-x: hidden;
-
-        -webkit-overflow-scrolling: touch;
-
         transform: translateX(-100%);
 
         transition:
-            transform 0.3s ease;
 
-        z-index: 1500;
+            transform 0.3s ease;
 
     }
 
@@ -1081,15 +1106,6 @@ p {
     }
 
 
-    /* SIDEBAR NAVIGATION */
-
-    .nav {
-
-        padding-bottom: 40px;
-
-    }
-
-
     /* CONTENT */
 
     .content {
@@ -1099,8 +1115,11 @@ p {
         width: 100%;
 
         padding:
+
             80px
+
             20px
+
             40px;
 
     }
@@ -1133,9 +1152,13 @@ p {
     .header-code {
 
         border-radius:
+
             0
+
             18px
+
             18px
+
             0;
 
     }
@@ -1146,13 +1169,20 @@ p {
         align-self: flex-end;
 
         border-radius:
+
             0
+
             18px
+
             18px
+
             0;
 
     }
 
+    .system-time {
+    align-items: flex-end;
+}
 
     /* CARDS */
 
@@ -1195,6 +1225,7 @@ p {
    ========================================================= */
 
 @media (max-width: 500px) {
+
 
     .content {
 
@@ -1241,27 +1272,5 @@ p {
 
     }
 
-}
-
-/* =========================================================
-   MOBILE SIDEBAR FOOTER
-   ========================================================= */
-
-@media (max-width: 900px) {
-
-    .sidebar-footer {
-
-        position: static;
-
-        margin:
-            20px
-            18px
-            0;
-
-        padding-top: 15px;
-
-        padding-bottom: 30px;
-
-    }
 
 }
