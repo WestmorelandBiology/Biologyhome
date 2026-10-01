@@ -386,6 +386,19 @@ body {
 
 }
 
+.weather-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0 18px 18px 0;
+}
+
+.weather-container iframe {
+    display: block;
+    width: 100%;
+    min-height: 700px;
+    border: 0;
+}
+
 
 /* =========================================================
    LCARS HEADER

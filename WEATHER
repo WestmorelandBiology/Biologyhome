@@ -25,7 +25,7 @@
     <nav class="sidebar">
 
         <div class="brand">
-            <img src="images/banner 1.png"
+            <img src="images/W_Logo.webp"
                  alt="Westmoreland Biology"
                  class="brand-logo">
         </div>
@@ -63,7 +63,7 @@
                 <span>Bio 2</span>
             </a>
 
-            <a href="MICRO.html" class="nav-link active">
+            <a href="MICRO.html" class="nav-link">
                 <div class="nav-bar"></div>
                 <span>Micro</span>
             </a>
@@ -73,7 +73,7 @@
                 <span>Calendar</span>
             </a>
 
-            <a href="WEATHER.html" class="nav-link">
+            <a href="WEATHER.html" class="nav-link active">
                 <div class="nav-bar"></div>
                 <span>Weather</span>
             </a>
@@ -104,7 +104,7 @@
 
             <div>COURSE SYSTEM</div>
 
-            <div>MICRO ONLINE</div>
+            <div>Weather</div>
 
         </div>
 
@@ -121,17 +121,17 @@
             <div class="header-left">
 
                 <span class="header-code">
-                    COURSE-265
+                    Current
                 </span>
 
                 <span class="header-title">
-                    MICRO &amp; BIOLOGY 
+                    WEEKLY Weather 
                 </span>
 
             </div>
 
             <div class="header-right">
-                MICRO
+                2026 Autumn
             </div>
 
         </header>
@@ -145,66 +145,43 @@
                 <div class="card-tab orange"></div>
 
                 <span>
-                    COURSE INFORMATION
+                    Seasonal INFORMATION
                 </span>
 
             </div>
 
 
             <h1>
-                About MICROBIOLOGY
+                About Weather
             </h1>
 
         </section>
 
 
-        <!-- IMAGE AREA -->
-        <section class="split-container">
-
-            <div class="image-panel">
-
-                <div class="image-panel-label">
-                    SYSTEM IMAGE 01
-                </div>
-
-                <img src="images/"
-                     class="split-image"
-                     alt="Course image">
-
-            </div>
-
-
-            <div class="image-panel">
-
-                <div class="image-panel-label">
-                    SYSTEM IMAGE 02
-                </div>
-
-                <img src="images/"
-                     class="split-image"
-                     alt="Course image">
-
-            </div>
-
-        </section>
-
-
-        <!-- COURSE DESCRIPTION -->
+        <!-- CALENDAR -->
         <section class="card">
 
             <div class="card-header">
 
-                <div class="card-tab purple"></div>
+                <div class="card-tab orange"></div>
 
                 <span>
-                    COURSE OVERVIEW
+                    Local Weather
                 </span>
 
             </div>
 
-            <p>
-                MICROBIOLOGY is a 15 week course.
-            </p>
+            <div class="weather-container">
+
+                <iframe
+                    src="https://embed.windy.com/embed2.html?lat=40.2406&lon=-79.5764&zoom=10&level=surface&overlay=wind&menu=true&message=true&marker=true&calendar=now&pressure=true&type=map&location=coordinates&detail=true&detailLat=40.2406&detailLon=-79.5764&metricWind=mph&metricTemp=°F&metricRain=in"
+                    width="100%"
+                    height="700"
+                    frameborder="0">
+                </iframe>
+
+
+            </div>
 
         </section>
 
@@ -217,17 +194,17 @@
                 <div class="card-tab blue"></div>
 
                 <span>
-                    COURSE RESOURCES
+                    ADDITIONAL RESOURCES
                 </span>
 
             </div>
 
             <h2>
-                Weekly Resources
+                LINKS
             </h2>
 
             <p>
-                Links to weekly Google Docs?
+                D2L
             </p>
 
         </section>
@@ -239,7 +216,7 @@
             <div class="footer-bar"></div>
 
             <span>
-                MICRO // MICRO &amp; BIOLOGY
+                YOUNGWOOD // WEATHER
             </span>
 
             <div class="footer-bar small"></div>
