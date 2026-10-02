@@ -1097,15 +1097,39 @@ p {
 
     /* SIDEBAR */
 
-    .sidebar {
+   .sidebar {
 
         width: 270px;
+
+        height: 100dvh;
+
+        max-height: 100dvh;
+
+        box-sizing: border-box;
+
+        overflow-y: auto;
+
+        overflow-x: hidden;
+
+        -webkit-overflow-scrolling: touch;
 
         transform: translateX(-100%);
 
         transition:
-
             transform 0.3s ease;
+
+        z-index: 1500;
+
+}
+    .sidebar-footer {
+
+        position: static;
+
+        margin: 20px 18px 0;
+
+        padding-top: 15px;
+
+        padding-bottom: 30px;
 
     }
 
