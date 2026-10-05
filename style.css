@@ -978,6 +978,68 @@ p {
 }
 
 /* =========================================================
+   SESSION DOCUMENT GRID
+   ========================================================= */
+
+.session-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+}
+
+
+.session-button {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 50px;
+
+    padding: 10px;
+
+    background: var(--lcars-purple);
+
+    color: #050505;
+
+    text-decoration: none;
+
+    font-size: 0.75rem;
+
+    font-weight: bold;
+
+    letter-spacing: 0.08em;
+
+    border-radius:
+        0
+        14px
+        14px
+        0;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+.session-button:hover {
+
+    background: var(--lcars-peach);
+
+    transform: translateX(3px);
+
+}
+
+/* =========================================================
    SPLIT IMAGE AREA
    ========================================================= */
 
@@ -1063,6 +1125,67 @@ p {
 
 }
 
+/* =========================================================
+   COURSE RESOURCE BUTTONS
+   ========================================================= */
+
+.resource-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+}
+
+
+.resource-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 45px;
+
+    padding: 10px 24px;
+
+    background: var(--lcars-blue);
+
+    color: #050505;
+
+    text-decoration: none;
+
+    font-size: 0.75rem;
+
+    font-weight: bold;
+
+    letter-spacing: 0.08em;
+
+    border-radius:
+        0
+        14px
+        14px
+        0;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+.resource-button:hover {
+
+    background: var(--lcars-peach);
+
+    transform: translateX(3px);
+
+}
 
 /* =========================================================
    FOOTER
@@ -1355,6 +1478,13 @@ p {
 
     }
 
+    /* DOC BUTTONS */
+    .session-grid {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
 }
 
 
@@ -1407,6 +1537,20 @@ p {
     .btn {
 
         width: 100%;
+
+    }
+
+    .session-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .session-button {
+
+        min-height: 48px;
+
+        font-size: 0.7rem;
 
     }
 
