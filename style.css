@@ -875,6 +875,107 @@ p {
 
 }
 
+/* =========================================================
+   WEATHER LOCATION BUTTONS
+   ========================================================= */
+
+.weather-locations {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+}
+
+
+.weather-location {
+
+    border: none;
+
+    background: var(--lcars-purple);
+
+    color: #050505;
+
+    padding: 12px 22px;
+
+    font-family: inherit;
+
+    font-size: 0.75rem;
+
+    font-weight: bold;
+
+    letter-spacing: 0.08em;
+
+    cursor: pointer;
+
+    border-radius:
+        0
+        18px
+        18px
+        0;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+.weather-location:hover {
+
+    background: var(--lcars-peach);
+
+}
+
+
+.weather-location.active {
+
+    background: var(--lcars-orange);
+
+}
+
+
+.weather-location:active {
+
+    transform: translateY(1px);
+
+}
+
+/* =========================================================
+   WEATHER CURRENT LOCATION
+   ========================================================= */
+
+.weather-current-location {
+
+    margin-top: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-size: 0.7rem;
+
+    letter-spacing: 0.12em;
+
+}
+
+
+.weather-current-location span {
+
+    color: var(--lcars-muted);
+
+}
+
+
+.weather-current-location strong {
+
+    color: var(--lcars-orange);
+
+}
 
 /* =========================================================
    SPLIT IMAGE AREA

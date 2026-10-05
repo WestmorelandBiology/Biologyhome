@@ -86,11 +86,15 @@
             <a href="https://www.youtube.com/@ezekielpatterson2394"
                target="_blank"
                class="nav-link external">
-
                 <div class="nav-bar"></div>
-
                 <span>▶ YOUTUBE</span>
+            </a>
 
+            <a href="https://d2l.westmoreland.edu/d2l/home"
+               target="_blank"
+               class="nav-link external">
+                <div class="nav-bar"></div>
+                <span>🧠 D2L</span>
             </a>
 
         </div>
@@ -155,27 +159,70 @@
 
 
         <!-- CALENDAR -->
-        <section class="card">
+       <section class="card">
 
-            <div class="card-header">
+    <div class="card-header">
+        <div class="card-tab orange"></div>
+        <span>WEATHER LOCATIONS</span>
+    </div>
 
-                <div class="card-tab orange"></div>
+            <div class="weather-locations">
 
-                <span>
-                    Local Weather
-                </span>
+            <button
+                class="weather-location active"
+                data-lat="40.2406"
+                data-lon="-79.5764"
+                data-name="YOUNGWOOD, PA">
+                YOUNGWOOD
+            </button>
+
+            <button
+                class="weather-location"
+                data-lat="40.3215"
+                data-lon="-79.3839"
+                data-name="LATROBE, PA">
+                LATROBE
+            </button>
+
+            <button
+                class="weather-location"
+                data-lat="40.6215"
+                data-lon="-79.1525"
+                data-name="INDIANA, PA">
+                INDIANA
+            </button>
+
+            <button
+                class="weather-location"
+                data-lat="40.4287"
+                data-lon="-79.6975"
+                data-name="MURRYSVILLE, PA">
+                MURRYSVILLE
+            </button>
 
             </div>
+            
+        <div class="weather-current-location">
 
-            <div class="weather-container">
+            <span>SELECTED LOCATION</span>
+
+            <strong id="weather-location">
+                YOUNGWOOD, PA
+            </strong>
+
+        </div>
+
+    </section>
+
+           <div class="weather-container">
 
                 <iframe
-                    src="https://embed.windy.com/embed2.html?lat=40.2406&lon=-79.5764&zoom=10&level=surface&overlay=wind&menu=true&message=true&marker=true&calendar=now&pressure=true&type=map&location=coordinates&detail=true&detailLat=40.2406&detailLon=-79.5764&metricWind=mph&metricTemp=°F&metricRain=in"
+                    id="windy-map"
+                    src="https://embed.windy.com/embed2.html?lat=40.2406&lon=-79.5764&detailLat=40.2406&detailLon=-79.5764&zoom=10&level=surface&overlay=radar&product=radar&menu=true&message=true&marker=true&calendar=now&pressure=false&type=map&location=coordinates&detail=true&metricWind=mph&metricTemp=F&metricRain=in&radarRange=-1"
                     width="100%"
                     height="700"
                     frameborder="0">
                 </iframe>
-
 
             </div>
 
@@ -223,6 +270,81 @@
     </main>
 
 </div>
+
+<script>
+
+const weatherButtons =
+    document.querySelectorAll(".weather-location");
+
+const windyMap =
+    document.getElementById("windy-map");
+
+
+weatherButtons.forEach(button => {
+
+    button.addEventListener("click", function() {
+
+        const lat = this.dataset.lat;
+
+        const lon = this.dataset.lon;
+
+        const name = this.dataset.name;
+
+
+        const windyURL =
+            "https://embed.windy.com/embed2.html" +
+            "?lat=" + lat +
+            "&lon=" + lon +
+            "&detailLat=" + lat +
+            "&detailLon=" + lon +
+            "&zoom=10" +
+            "&level=surface" +
+            "&overlay=radar" +
+            "&product=radar" +
+            "&menu=true" +
+            "&message=true" +
+            "&marker=true" +
+            "&calendar=now" +
+            "&pressure=false" +
+            "&type=map" +
+            "&location=coordinates" +
+            "&detail=true" +
+            "&metricWind=mph" +
+            "&metricTemp=F" +
+            "&metricRain=in" +
+            "&radarRange=-1";
+
+
+        windyMap.src = windyURL;
+
+
+        /* Update active button */
+
+        weatherButtons.forEach(btn => {
+
+            btn.classList.remove("active");
+
+        });
+
+        this.classList.add("active");
+
+
+        /* Update location display if present */
+
+        const locationDisplay =
+            document.getElementById("weather-location");
+
+        if (locationDisplay) {
+
+            locationDisplay.textContent = name;
+
+        }
+
+    });
+
+});
+
+</script>
 
 </body>
 </html>
